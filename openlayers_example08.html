@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+
+    <link rel="stylesheet" href="./Skeleton-2.0.4/css/normalize.css">
+    <link rel="stylesheet" href="./Skeleton-2.0.4/css/skeleton.css">
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.15.1/css/ol.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.15.1/build/ol.js"></script>
+
+    <script src="./openlayers_example08.js?dt=20240225"></script>
+    <link rel="stylesheet" href="./openlayers_example08.css?dt=20240225" type="text/css">
+
+    <title>OpenLayers example</title>
+  </head>
+  <body>
+    <div class="title">課題2023</div>
+
+    <div class="mapArea">
+      <div id="list" class="list"></div>
+      <div id="map" class="map"></div>
+    </div>
+
+    <div class="container">
+        地図をクリックすると、入力欄に緯度・経度が表示されます。
+        <input type="button" class="button button-mycompany" id="button_mycompany" value="弊社の位置" />
+    </div>
+    <div class="container">
+      <div class="area_entry">
+        <div>
+          <label for="ctrl_lat">緯度</label><input id="ctrl_lat" value="">
+          <label for="ctrl_lon">経度</label><input id="ctrl_lon" value="">
+        </div>
+        <div>
+          <label for="ctrl_name">名称</label><input id="ctrl_name" value="">
+        </div>
+        <div>
+          <label for="ctrl_url">URL</label><input id="ctrl_url" value="">
+        </div>
+        <div>
+          <label for="ctrl_remarks">メモ</label><input id="ctrl_remarks" value="">
+        </div>
+      </div>
+      <input type="button" class="button button-primary" id="button_save" value="追加" />
+      <input type="button" class="button button-addnew" id="button_addnew" value="クリア" />
+      <input type="button" class="button button-delete" id="button_delete" value="削除" />
+      <input type="hidden" id="ctrl_dt" value="">
+    </div>
+</html>

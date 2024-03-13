@@ -1,0 +1,112 @@
+@charset "UTF-8";
+body {
+  padding: 10px;
+}
+.title {
+  font-weight: 300;
+  font-size: 120%;
+}
+
+.mapArea {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.mapArea .list {
+  height: calc(100vh - 350px);
+  flex-basis: 300px;
+  overflow-y: scroll;
+  margin: 20px;
+  margin-right: 0;
+}
+.mapArea .map {
+  height: calc(100vh - 350px);
+  margin: 20px;
+  width: calc(100vw - 300px);
+  flex-basis: auto;
+}
+
+table.point-list td.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+table.point-list td.info a.url {
+  margin: 0 10px;
+  width: 30px;
+  height: 30px;
+  background-image: url(img/home-4-svgrepo-com.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: background-color 0.3s;
+}
+table.point-list td.info a.url:hover {
+  background-color: rgba(195, 240, 252, 0.4);
+}
+
+.area_entry label {
+  display: inline-block;
+  width: 50px;
+}
+.area_entry input {
+  margin-right: 20px;
+  padding: 4px;
+}
+#ctrl_lat,
+#ctrl_lon {
+  width: 200px;
+}
+#ctrl_name {
+  width: 500px;
+}
+#ctrl_url {
+  width: 500px;
+}
+#ctrl_remarks {
+  width: 500px;
+}
+
+.container input[type="button"] {
+  font-size: 95%;
+}
+#button_delete {
+  margin-left: 100px;
+}
+
+/* ポップアップ用のスタイル */
+.tooltip {
+  background-color: white;
+  position: relative;
+  border-radius: 10px;
+  border: 2px solid #666;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, .5);
+  padding: 10px 20px;
+}
+.tooltip:before,
+.tooltip:after {
+  position: absolute;
+  left: 50%;
+  content: "";
+  height: 0;
+  width: 0;
+}
+.tooltip:before {
+  top: 100%;
+  border: 9px solid;
+  border-color: transparent;
+  border-top-color: #666;
+  margin-left: -9px;
+}
+.tooltip:after {
+  top: 99%;
+  border: 8px solid;
+  border-color: transparent;
+  border-top-color: white;
+  margin-left: -8px;
+}
+.tooltip p {
+  color: #666;
+  line-height: 1.5;
+}
