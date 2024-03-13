@@ -2,10 +2,10 @@
 
 class myDB {
 
-    const DB_HOST = 'mysql1.php.starfree.ne.jp';
-    const DB_NAME = 'kshita3_study2023';
-    const DB_USERID = 'kshita3_map';
-    const DB_PASSWD = 'shT7jJ2a4Vjd87R';
+    const DB_HOST = '********';
+    const DB_NAME = '********';
+    const DB_USERID = '********';
+    const DB_PASSWD = '********';
 
     public $mydb = null;
     public $exception = null;
